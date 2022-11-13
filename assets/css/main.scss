@@ -1,0 +1,240 @@
+---
+---
+
+@import "includes/variables";
+
+/** Primary Element Styles **/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $main-font-stack;
+}
+
+h1, h2, h3, h4, h5, h6, .title {
+  font-family: $accent-font-stack;
+  margin: 0 0 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2 rem;
+}
+
+a {
+  color: $blue;
+}
+
+/** Page Layout **/
+
+.site {
+  @extend .container;
+
+  gap: $grid-gutter-width;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+/** Page Decoration **/
+
+body {
+  background-color: $light-purple;
+}
+
+.header,
+.footer,
+.content,
+.sidebar {
+  background-color: $white;
+  @extend %major-border;
+  @include shadow();
+  @include standard-padding();
+}
+
+button, input[type=submit], .button {
+  @extend %button;
+}
+
+/* Navbar */
+
+.navbar-brand {
+  @extend %bold;
+
+  font-family: $accent-font-stack;
+  font-size: 2rem;
+  line-height: 1;
+  text-align: center;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: 4rem;
+    text-align: left;
+  }
+
+  padding: 0px;
+  background: $blue;
+  // @extend %progress;
+  -webkit-text-stroke: 1px $dark;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+/** Nav **/
+
+.navbar {
+  a {
+    font-weight: bold;
+  }
+}
+
+.navbar-nav {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+
+  display: flex;
+  gap: 5px $grid-gutter-width;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+
+  li {
+
+  }
+}
+
+.nav-link {
+  @extend %button;
+  font-size: 0.85rem;
+
+  padding: 2px 5px;
+  margin: 0 0 0.25rem;
+
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+/** Jobs List **/
+
+.job {
+  @extend %minor-border;
+  margin-bottom: $grid-gutter-width;
+
+  &-header {
+    @include standard-padding;
+    display: block;
+    background-color: $primary-color;
+    color: $white;
+    border-bottom: 1px solid $dark;
+  }
+
+  &-description {
+    @include standard-padding;
+  }
+}
+
+.jobs-rss {
+  .notice {
+    margin-bottom: $grid-gutter-width;
+    font-size: 0.85rem;
+  }
+}
+
+/** Footer **/
+.site-footer {
+  font-size: 0.85em;
+}
+
+.site-info {
+  @extend %responsive-flex;
+}
+
+/** Posts **/
+
+.post {
+  @extend %major-border;
+}
+
+.post-header {
+  @include standard-padding;
+
+  background-color: $primary-color;
+  color: $white;
+  border-bottom: 2px solid $dark;
+
+  @extend %responsive-flex;
+
+  a {
+    color: $white;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.post-title {
+  margin-bottom: 0;
+}
+
+.post-content {
+  @include standard-padding;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.post-footer {
+  @include standard-padding;
+  font-size: 0.85rem;
+
+  @extend %responsive-flex;
+}
+
+/** Pages **/
+
+.page-home, .has-toc {
+  @extend %responsive-columns;
+}
+
+/** Pride **/
+.pride {
+  .site-title a {
+    @extend %progress;
+    -webkit-background-clip: text;
+  }
+
+  .entry-header, .job-header, .button {
+    @extend %rainbow;
+  }
+}

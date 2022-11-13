@@ -1,0 +1,51 @@
+---
+---
+
+@page { size: auto;  margin: 0mm; }
+
+body {
+  margin-top: 0;
+  background-image: none;
+  background-color: #ffffff !important;
+  font-size: 1rem;
+}
+
+a {
+  border-bottom: none;
+  text-decoration: none !important;
+  color: #000000;
+}
+
+.web-only {
+  display: none;
+}
+
+.print-only {
+  display: block;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-bottom: 1px solid #000000;
+}
+
+.page-header,
+.page-footer,
+.breadcrumb-container {
+  display: none;
+}
+
+.about-header {
+  justify-content: space-between;
+}
+
+.container, .content {
+  width: 100%;
+  max-width: 100%;
+}
+
+.content {
+  margin-bottom: 0;
+}
+

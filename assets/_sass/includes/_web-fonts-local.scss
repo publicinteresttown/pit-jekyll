@@ -1,0 +1,44 @@
+// Replacement for Google Fonts module
+//
+// Download your fonts from https://google-webfonts-helper.herokuapp.com/
+
+
+@mixin font-face( $name, $slug, $weight: 400, $style: normal) {
+  $weight-name: $weight;
+  @if $weight == 400 {
+    @if $style == normal {
+      $weight-name: "regular";
+    }
+    @else {
+      $weight-name: $style;
+    }
+  }
+
+  @font-face {
+    font-family: $name;
+    font-style: $style;
+    font-weight: $weight;
+    src: url($font-path + $slug + '-' + $weight-name + '.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url($font-path + $slug + '/' + $slug + '-' + $weight-name + '.woff2') format('woff2'), /* Super Modern Browsers */
+         url($font-path + $slug + '/' + $slug + '-' + $weight-name + '.woff') format('woff'), /* Modern Browsers */
+         url($font-path + $slug + '/' + $slug + '-' + $weight-name + '.ttf') format('truetype'), /* Safari, Android, iOS */
+  }
+}
+
+@mixin web-fonts($fonts...) {
+  @each $font in $fonts {
+    @each $weight in nth($font, 3) {
+      $name: nth($font, 1);
+      $slug: nth($font, 2);
+
+      @if type_of($weight) == "string" or type_of($weight) == "number" {
+        @include font-face($name, $slug, $weight);
+      }
+      @else if type_of($weight) == "list" {
+        @include font-face($name, $slug, nth($weight, 1), nth($weight, 2));
+      }
+    }
+  }
+}
+

@@ -1,0 +1,222 @@
+$font-path: '/assets/fonts/';
+
+@import "web-fonts-local";
+
+/* Colors */
+
+$white: #fffcf6;
+$dark: #2f2f35;
+
+/*
+ * USWDS colors
+ * https://designsystem.digital.gov/design-tokens/color/system-tokens/
+ */
+$uswds-red-60v: #b50909;
+$uswds-blue-warm-60v: #0050d8;
+$uswds-blue-warm-50v: #2672de;
+$uswds-blue-warm-40v: #5994f6;
+$uswds-indigo-60v: #4a50c4;
+$uswds-indigo-warm-20: #cbc4f2;
+
+$blue: $uswds-blue-warm-50v;
+$purple: $uswds-indigo-60v;
+$light-purple: $uswds-indigo-warm-20;
+$red: $uswds-red-60v;
+
+$accent-color: $blue;
+$footer-color: $red;
+
+$link-color: $accent-color;
+$link-hover-color: $accent-color;
+$link-hover-decoration: none;
+
+$main-background: $white;
+$notes-background: #e5eaf3;
+
+$nav-link-hover-bg: rgba(#fff, 0.3);
+
+$primary-color: $blue;
+
+/* Sizes */
+$page-width: 1140px;
+$column-width: 380px;
+
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+
+$grid-gutter-width: 15px;
+
+$border-weight-thin: 2px;
+$border-weight-thick: 2px;
+
+/* Fonts */
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Quicksand:wght@400;700&display=swap');
+@include web-fonts(
+  ("Montserrat", "montserrat", (700)),
+  ("Quicksand", "quicksand", (400, 700))
+);
+
+$main-font-stack: 'Quicksand', Verdana, Arial, sans-serif;
+$accent-font-stack: 'Montserrat', Helvetica, Arial, sans-serif;
+$code-font: monospace;
+
+%font-normal {
+  font-weight: 400;
+}
+
+%bold {
+  font-weight: 700;
+}
+
+
+@mixin shadow() {
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+
+%table-to-cards {
+  tbody {
+    display: flex;
+    flex-direction: row;
+  }
+
+  tr {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-right: 1rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  td {
+    display: block;
+  }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $breakpoint-md) {
+    max-width: $page-width + (2*$grid-gutter-width) + (2*$border-weight-thick);
+  }
+}
+
+%major-border {
+  border: 2px solid $dark;
+  border-radius: 4px;
+
+  & > *:first-child {
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+  }
+}
+
+%minor-border {
+  border: 1px solid $dark;
+  border-radius: 3px;
+}
+
+@mixin standard-padding {
+  padding: 5px $grid-gutter-width;
+}
+
+%button {
+  display: inline-block;
+  position: relative;
+  top: 0;
+  color: $white;
+  background-color: $primary-color;
+  line-height: 1.5;
+  padding: 5px 10px;
+  margin: 0 0 0.25rem;
+  text-decoration: none;
+
+  box-shadow: rgba(0, 0, 0, 0.6) 3px 3px 4px;
+
+  transition: all 0.1s ease-in-out;
+  &:hover, &:active {
+    background-color: lighten($primary-color, 15%);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px;
+  }
+
+  @extend %minor-border;
+}
+
+%responsive-flex {
+  display: flex;
+  flex-direction: column;
+  gap: $grid-gutter-width;
+
+  @media (min-width: $breakpoint-md) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+%responsive-columns {
+  .main {
+    display: flex;
+    flex-direction: column;
+    gap: $grid-gutter-width;
+  }
+  @media (min-width: $breakpoint-md) {
+    .main {
+      flex-direction: row;
+    }
+    .content {
+      width: 70%;
+    }
+    .sidebar {
+      flex-grow: 1;
+    }
+  }
+}
+
+%rainbow {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 154, 0, 1) 10%,
+    rgba(208, 222, 33, 1) 20%,
+    rgba(79, 220, 74, 1) 30%,
+    rgba(63, 218, 216, 1) 40%,
+    rgba(47, 201, 226, 1) 50%,
+    rgba(28, 127, 238, 1) 60%,
+    rgba(95, 21, 242, 1) 70%,
+    rgba(186, 12, 248, 1) 80%,
+    rgba(251, 7, 217, 1) 90%,
+    rgba(255, 0, 0, 1) 100%
+  );
+}
+
+%progress {
+  background: linear-gradient(
+    45deg,
+    #fff 0%,
+    #fff 9%,
+    #f6a8b7 9%,
+    #f6a8b7 18%,
+    #5ccefa 18%,
+    #5ccefa 27%,
+    #784f16 27%,
+    #784f16 36%,
+    #000 36%,
+    #000 45%,
+    #e40303 45%,
+    #e40303 54%,
+    #ff8c00 54%,
+    #ff8c00 63%,
+    #ffed00 63%,
+    #ffed00 72%,
+    #008026 72%,
+    #008026 81%,
+    #004dff 81%,
+    #004dff 90%,
+    #750787 90%,
+    #750787 100%
+  );
+}
