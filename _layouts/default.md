@@ -63,10 +63,10 @@
         </div>
         <ul class="nav navbar-nav nav-pages">
           <li class="nav-item">
-            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link" href="https://mastodon.publicinterest.town/">Mastodon</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://mastodon.publicinterest.town/">Mastodon</a>
+            <a class="nav-link" href="https://forms.gle/vLmejEZBpfWGW5if6">JOIN!</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://mastodon.publicinterest.town/explore">Members</a>
@@ -84,6 +84,16 @@
       {{ content }}
     </section>
     <footer class="footer">
+      <nav class="navbar">
+        <ul class="nav nav-footer">
+          <li class="nav-item">
+            <a class="nav-link" href="/docs/privacy-policy/">Privacy Policy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/publicinteresttown/pit-jekyll">Contribute to this Site</a>
+          </li>
+        </ul>
+      </nav>
     </footer>
   </div>
 </body>

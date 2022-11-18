@@ -26,11 +26,15 @@ h2 {
 }
 
 h3 {
-  font-size: 1.2 rem;
+  font-size: 1.2rem;
 }
 
 a {
   color: $blue;
+}
+
+li {
+  margin-bottom: 0.5rem;
 }
 
 /** Page Layout **/
@@ -72,7 +76,7 @@ body {
 .sidebar {
   background-color: $white;
   @extend %major-border;
-  @include shadow();
+  @extend %shadow;
   @include standard-padding();
 }
 
@@ -116,7 +120,7 @@ button, input[type=submit], .button {
   }
 }
 
-.navbar-nav {
+.nav {
   list-style: none;
   margin-left: 0;
   padding-left: 0;
@@ -125,22 +129,23 @@ button, input[type=submit], .button {
   gap: 5px $grid-gutter-width;
   flex-direction: row;
   flex-wrap: wrap;
-  overflow: hidden;
 
-  li {
-
-  }
 }
 
 .nav-link {
-  @extend %button;
-  font-size: 0.85rem;
-
-  padding: 2px 5px;
-  margin: 0 0 0.25rem;
-
-  white-space: nowrap;
   text-decoration: none;
+}
+
+.navbar-nav {
+  .nav-link {
+    @extend %button;
+    font-size: 0.85rem;
+
+    padding: 2px 5px;
+    margin: 0 0 0.25rem;
+
+    white-space: nowrap;
+  }
 }
 
 /** Jobs List **/
@@ -148,6 +153,7 @@ button, input[type=submit], .button {
 .job {
   @extend %minor-border;
   margin-bottom: $grid-gutter-width;
+  @extend %shadow;
 
   &-header {
     @include standard-padding;
@@ -155,6 +161,10 @@ button, input[type=submit], .button {
     background-color: $primary-color;
     color: $white;
     border-bottom: 1px solid $dark;
+
+    a {
+      color: $white;
+    }
   }
 
   &-description {
@@ -182,6 +192,8 @@ button, input[type=submit], .button {
 
 .post {
   @extend %major-border;
+  margin-bottom: $grid-gutter-width;
+  @extend %shadow;
 }
 
 .post-header {

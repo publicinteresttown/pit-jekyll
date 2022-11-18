@@ -49,6 +49,12 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-seo-tag
 
+feeddata:
+  - name: jobs
+    url: https://mastodon.publicinterest.town/@jobs.rss
+  - name: rubynews
+    url: https://www.ruby-lang.org/en/feeds/news.rss
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
