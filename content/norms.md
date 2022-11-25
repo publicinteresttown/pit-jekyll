@@ -26,7 +26,7 @@ _This is a rough draft! [Please feel free to make suggestions!](https://github.c
 
 ## Looking Out For Community Safety
 
-* If you see something, say something! Governance & moderation get difficult at scale -  please notify an Admin if you see behavior that's inappropriate or unfriendly.
+* Governance & moderation get difficult at scale -  please notify an Admin if you see behavior that's inappropriate or unfriendly.
 * Don’t use this for official government business. Know the rules that apply to you about what you can & can’t say outside work.
 * Don’t repost people’s private or local content to public areas without their permission.
 * Mastodon and its derivatives, including Hometown, behave differently from other websites, in that if you “@ mention” someone in a direct message, that person is automatically pulled into the message thread and can see everything you have said about them!
