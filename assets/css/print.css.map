@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "print.css",
+	"sources": [
+		"print.scss"
+	],
+	"sourcesContent": [
+		"@page { size: auto;  margin: 0mm; }\n\nbody {\n  margin-top: 0;\n  background-image: none;\n  background-color: #ffffff !important;\n  font-size: 1rem;\n}\n\na {\n  border-bottom: none;\n  text-decoration: none !important;\n  color: #000000;\n}\n\n.web-only {\n  display: none;\n}\n\n.print-only {\n  display: block;\n}\n\n.section-title {\n  font-size: 1.25rem;\n  font-weight: bold;\n  border-bottom: 1px solid #000000;\n}\n\n.page-header,\n.page-footer,\n.breadcrumb-container {\n  display: none;\n}\n\n.about-header {\n  justify-content: space-between;\n}\n\n.container, .content {\n  width: 100%;\n  max-width: 100%;\n}\n\n.content {\n  margin-bottom: 0;\n}\n\n"
+	],
+	"names": [],
+	"mappings": "AAAA,KAAK,GAAG,IAAI,EAAE,IAAI;EAAG,MAAM,EAAE,GAAG;;AAEhC,AAAA,IAAI,CAAC,EACH,UAAU,EAAE,CAAC,EACb,gBAAgB,EAAE,IAAI,EACtB,gBAAgB,EAAE,kBAAkB,EACpC,SAAS,EAAE,IAAI,GAChB;;AAED,AAAA,CAAC,CAAC,EACA,aAAa,EAAE,IAAI,EACnB,eAAe,EAAE,eAAe,EAChC,KAAK,EAAE,OAAO,GACf;;AAED,AAAA,SAAS,CAAC,EACR,OAAO,EAAE,IAAI,GACd;;AAED,AAAA,WAAW,CAAC,EACV,OAAO,EAAE,KAAK,GACf;;AAED,AAAA,cAAc,CAAC,EACb,SAAS,EAAE,OAAO,EAClB,WAAW,EAAE,IAAI,EACjB,aAAa,EAAE,iBAAiB,GACjC;;AAED,AAAA,YAAY,EACZ,YAAY,EACZ,qBAAqB,CAAC,EACpB,OAAO,EAAE,IAAI,GACd;;AAED,AAAA,aAAa,CAAC,EACZ,eAAe,EAAE,aAAa,GAC/B;;AAED,AAAA,UAAU,EAAE,QAAQ,CAAC,EACnB,KAAK,EAAE,IAAI,EACX,SAAS,EAAE,IAAI,GAChB;;AAED,AAAA,QAAQ,CAAC,EACP,aAAa,EAAE,CAAC,GACjB"
+}

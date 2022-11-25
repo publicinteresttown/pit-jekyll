@@ -1,0 +1,127 @@
+/* Colors */
+/* USWDS colors https://designsystem.digital.gov/design-tokens/color/system-tokens/ */
+/* Sizes */
+/* Fonts */
+@font-face { font-family: "Montserrat"; font-style: normal; font-weight: 700; src: url("/assets/fonts/montserrat-700.eot"); /* IE9 Compat Modes */ src: local(""), url("/assets/fonts/montserrat/montserrat-700.woff2") format("woff2"), url("/assets/fonts/montserrat/montserrat-700.woff") format("woff"), url("/assets/fonts/montserrat/montserrat-700.ttf") format("truetype"); }
+
+@font-face { font-family: "Quicksand"; font-style: normal; font-weight: 400; src: url("/assets/fonts/quicksand-regular.eot"); /* IE9 Compat Modes */ src: local(""), url("/assets/fonts/quicksand/quicksand-regular.woff2") format("woff2"), url("/assets/fonts/quicksand/quicksand-regular.woff") format("woff"), url("/assets/fonts/quicksand/quicksand-regular.ttf") format("truetype"); }
+
+@font-face { font-family: "Quicksand"; font-style: normal; font-weight: 700; src: url("/assets/fonts/quicksand-700.eot"); /* IE9 Compat Modes */ src: local(""), url("/assets/fonts/quicksand/quicksand-700.woff2") format("woff2"), url("/assets/fonts/quicksand/quicksand-700.woff") format("woff"), url("/assets/fonts/quicksand/quicksand-700.ttf") format("truetype"); }
+
+.navbar-brand { font-weight: 700; }
+
+.post, .job, .header, .footer, .content, .sidebar { box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px; }
+
+.navbar-nav .nav-link, button, input[type=submit], .button { box-shadow: rgba(0, 0, 0, 0.6) 3px 3px 4px; }
+
+.container, .site { margin-left: auto; margin-right: auto; }
+
+@media (min-width: 768px) { .container, .site { max-width: 1174px; } }
+
+.post, .header, .footer, .content, .sidebar { border: 2px solid #2f2f35; border-radius: 4px; }
+
+.post > *:first-child, .header > *:first-child, .footer > *:first-child, .content > *:first-child, .sidebar > *:first-child { border-top-right-radius: 2px; border-top-left-radius: 2px; }
+
+.job, .navbar-nav .nav-link, button, input[type=submit], .button { border: 1px solid #2f2f35; border-radius: 3px; }
+
+.navbar-nav .nav-link, button, input[type=submit], .button { display: inline-block; position: relative; top: 0; color: #fffcf6; background-color: #2672de; line-height: 1.5; padding: 5px 10px; margin: 0 0 0.25rem; text-decoration: none; font-weight: bold; transition: all 0.1s ease-in-out; }
+
+.navbar-nav .nav-link:hover, button:hover, input[type=submit]:hover, .button:hover, .navbar-nav .nav-link:active, button:active, input[type=submit]:active, .button:active { background-color: #689de8; box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px; }
+
+.post-footer, .post-header, .site-info { display: flex; flex-direction: column; gap: 15px; }
+
+@media (min-width: 768px) { .post-footer, .post-header, .site-info { flex-direction: row; justify-content: space-between; align-items: center; } }
+
+.page-home .main, .has-toc .main { display: flex; flex-direction: column; gap: 15px; }
+
+@media (min-width: 768px) { .page-home .main, .has-toc .main { flex-direction: row; } .page-home .content, .has-toc .content { width: 70%; } .page-home .sidebar, .has-toc .sidebar { width: 30%; } }
+
+.pride .entry-header, .pride .job-header, .pride .button { background: linear-gradient(90deg, red 0%, #ff9a00 10%, #d0de21 20%, #4fdc4a 30%, #3fdad8 40%, #2fc9e2 50%, #1c7fee 60%, #5f15f2 70%, #ba0cf8 80%, #fb07d9 90%, red 100%); }
+
+.pride .site-title a { background: linear-gradient(45deg, #fff 0%, #fff 9%, #f6a8b7 9%, #f6a8b7 18%, #5ccefa 18%, #5ccefa 27%, #784f16 27%, #784f16 36%, #000 36%, #000 45%, #e40303 45%, #e40303 54%, #ff8c00 54%, #ff8c00 63%, #ffed00 63%, #ffed00 72%, #008026 72%, #008026 81%, #004dff 81%, #004dff 90%, #750787 90%, #750787 100%); }
+
+/** Primary Element Styles **/
+* { box-sizing: border-box; }
+
+body { font-family: "Quicksand", Verdana, Arial, sans-serif; }
+
+h1, h2, h3, h4, h5, h6, .title { font-family: "Montserrat", Helvetica, Arial, sans-serif; margin: 0 0 1rem; }
+
+h1 { font-size: 2rem; }
+
+h2 { font-size: 1.5rem; }
+
+h3 { font-size: 1.2rem; }
+
+a { color: #2672de; }
+
+li { margin-bottom: 0.5rem; }
+
+/** Page Layout **/
+.site { gap: 15px; display: flex; flex-direction: column; }
+
+.header { grid-area: header; }
+
+.main { grid-area: main; }
+
+.sidebar { grid-area: sidebar; }
+
+.footer { grid-area: footer; }
+
+/** Page Decoration **/
+body { background-color: #cbc4f2; }
+
+.header, .footer, .content, .sidebar { background-color: #fffcf6; padding: 5px 15px; }
+
+/* Navbar */
+.navbar-brand { font-family: "Montserrat", Helvetica, Arial, sans-serif; font-size: 2rem; line-height: 1; text-align: center; padding: 0px; background: #2672de; -webkit-text-stroke: 1px #2f2f35; -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none; }
+
+@media (min-width: 768px) { .navbar-brand { font-size: 4rem; text-align: left; } }
+
+.navbar-brand:hover { text-decoration: none; }
+
+/** Nav **/
+.navbar a { font-weight: bold; }
+
+.nav { list-style: none; margin-left: 0; padding-left: 0; display: flex; gap: 5px 15px; flex-direction: row; flex-wrap: wrap; }
+
+.nav-link { text-decoration: none; }
+
+.navbar-nav .nav-link { font-size: 0.85rem; padding: 2px 5px; margin: 0 0 0.25rem; white-space: nowrap; }
+
+/** Jobs List **/
+.job { margin-bottom: 15px; }
+
+.job-header { padding: 5px 15px; display: block; background-color: #2672de; color: #fffcf6; border-bottom: 1px solid #2f2f35; }
+
+.job-header a { color: #fffcf6; }
+
+.job-description { padding: 5px 15px; }
+
+.jobs-rss .notice { margin-bottom: 15px; font-size: 0.85rem; }
+
+/** Footer **/
+.site-footer { font-size: 0.85em; }
+
+/** Posts **/
+.post { margin-bottom: 15px; }
+
+.post-header { padding: 5px 15px; background-color: #2672de; color: #fffcf6; border-bottom: 2px solid #2f2f35; }
+
+.post-header a { color: #fffcf6; text-decoration: none; }
+
+.post-header a:hover { text-decoration: underline; }
+
+.post-title { margin-bottom: 0; }
+
+.post-content { padding: 5px 15px; }
+
+.post-content p:last-child { margin-bottom: 0; }
+
+.post-footer { padding: 5px 15px; font-size: 0.85rem; }
+
+/** Pages **/
+/** Pride **/
+.pride .site-title a { -webkit-background-clip: text; }
+
+/*# sourceMappingURL=main.css.map */
