@@ -41,10 +41,10 @@ When you authorize an application to use your account, depending on the scope of
 
 ## IV. Administration of Policy
 
-## A. Updates
+### A. Updates
 
 The Administrators reserve the right to update the Privacy Policy at any time at their discretion. Updates to the Privacy Policy will be communicated to Community members via email and posts from admin accounts. If you have any concerns about or suggestions for the Privacy Policy, please contact an administrator or [make a suggestion on GitHub](https://github.com/publicinteresttown/pit-jekyll/issues).
 
-## B. License
+### B. License
 
 The privacy policy is based on [work by Darius Kazemi](https://friend.camp/about/more#coc). It is provided under a [Creative Commons Zero License](https://creativecommons.org/share-your-work/public-domain/cc0/), meaning its contents are in the public domain.

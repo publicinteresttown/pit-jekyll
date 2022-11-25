@@ -129,11 +129,11 @@ Participants asked to stop any harassing behavior are expected to comply immedia
 
 ## VII. Administration of Policy
 
-## A. Updates
+### A. Updates
 
 The Administrators reserve the right to update the Code of Conduct at any time at their discretion. Updates to the Code of Conduct will be communicated to Community members via email and posts from admin accounts. If you have any concerns about or suggestions for the Code of Conduct, please contact an administrator or [make a suggestion on GitHub](https://github.com/publicinteresttown/pit-jekyll/issues).
 
-## B. License
+### B. License
 
 The Code of Conduct was adapted from the [LGBTQ in Tech Code of Conduct](https://lgbtq.technology/coc.html) and is therefore licensed using a [Creative Commons Zero License](https://creativecommons.org/share-your-work/public-domain/cc0/), meaning the contents are in the public domain.
 

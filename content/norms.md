@@ -25,6 +25,7 @@ _This is a rough draft! [Please feel free to make suggestions!](https://github.c
 * Most mastodon servers do not support post threads natively - they just show up as a jumble of disconnected posts. Consider writing a blog post and linking to it instead of post threads. If you are going to use a post thread, indicate it as such in the first post, then make sure that any posts after the first one are set to “Unlisted” in the privacy settings so as not to spam people’s feeds.
 
 ## Looking Out For Community Safety
+
 * If you see something, say something! Governance & moderation get difficult at scale -  please notify an Admin if you see behavior that's inappropriate or unfriendly.
 * Don’t use this for official government business. Know the rules that apply to you about what you can & can’t say outside work.
 * Don’t repost people’s private or local content to public areas without their permission.
