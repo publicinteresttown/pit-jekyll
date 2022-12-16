@@ -19,7 +19,6 @@ _This is a rough draft! [Please feel free to make suggestions!](https://github.c
 ## Practicing Good Community Hygiene
 
 * Please enable two-factor authentication. You can do this under in your settings under Account > Two-factor Auth
-* Use Content Warnings (“CW”s) frequently, not just for content that may upset folks, but also for anything that might be considered off-topic. A good example is posts about politics, which most other servers require to be behind a CW. A good rule of thumb is to use CWs way more often than you think you should!
 * Images & videos are comparatively expensive to host, so text is preferred. Use accessibility features, such as alt text on all images.
 * Please use [tone tags](https://tonetags.carrd.co/) frequently. It’s often hard to tell what a person means without context.
 * Most mastodon servers do not support post threads natively - they just show up as a jumble of disconnected posts. Consider writing a blog post and linking to it instead of post threads. If you are going to use a post thread, indicate it as such in the first post, then make sure that any posts after the first one are set to “Unlisted” in the privacy settings so as not to spam people’s feeds.
